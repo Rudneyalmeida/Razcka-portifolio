@@ -211,7 +211,7 @@ footer {
     } 
     .apresentacao__conteudo {
         width: auto;
-        padding: 9% 0; 
+        padding: 8% 0; 
     }
     .apresentacao__abstract{
         background: var(--cor-hover);
