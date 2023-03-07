@@ -97,6 +97,12 @@ body{
     color: var(--cor-secudaria);
     font-size: 0.8rem;
 }
+.apresentacao__links__subtitulo-leia{
+    font-family: var(--fonte-primaria);
+    color: var(--cor-secudaria);
+    font-size: 0.6rem;
+    font-style: italic;
+}
 .apresentacao__links__navegacao {
     text-decoration: none;
     color: var(--cor-secudaria);
