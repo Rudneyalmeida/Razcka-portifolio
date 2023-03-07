@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 :root{
-    --cor-primaria: #2C3639;
-    --cor-secudaria: #DCD7C9;
-    --cor-terciaria: #86A3B8;
+    --cor-primaria: #2D2424;
+    --cor-secudaria: #F4DFBA;
+    --cor-terciaria: #CA965C;
     --cor-hover: #A27B5C;
     --fonte-primaria: 'Krona One', sans-serif ;
     --fonte-secundaria:'Montserrat', sans-serif ;
@@ -17,7 +17,7 @@ body{
     box-sizing: border-box;
     width: auto;
     padding: 5px;
-    background: var(--cor-primaria);
+    background-image: linear-gradient(to left, #4c6c81, black);
     color: var(--cor-secudaria);
 }
 .cabecalho{
@@ -59,7 +59,7 @@ body{
     gap: 15px;  
     font-family: var(--fonte-primaria);
     font-size: 1rem; 
-  
+    align-items: center;
 }
 .apresentacao__conteudo__titulo {
     font-family: var(--fonte-primaria);
@@ -76,23 +76,21 @@ body{
     font-family: var(--fonte-primaria);
     font-size: 1.5rem;
     padding: 3%;
-    margin:3%
-    
+    margin:3%;
 }
 .tituloDestaque{
     color: var(--cor-terciaria);
 }
 .apresentacao__imagem {
     width: 50%;
-    border-radius: 0 50px 0 50px;
 }
-  
 .apresentacao__links {
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 5% ;
-    margin:2% 0 0 6%
+    margin:4% 0 0 6%;
+    align-items: center;
 }
 .apresentacao__links__subtitulo {
     font-family: var(--fonte-primaria);
@@ -110,7 +108,6 @@ body{
     font-family: var(--fonte-secundaria);
     font-size: 1rem;
     justify-content: space-between;
-    background-color: var(--cor-primaria);
     transition: 600ms;
 }
 .apresentacao__links__navegacao:hover {
@@ -124,7 +121,7 @@ body{
     width: 12%;
     text-align: center;
     color: var(--cor-secudaria);
-    margin: 4px;
+    margin: 0 0 30px 50px;
     font-family: var(--fonte-secundaria);
     text-decoration: none;
     display: flex;
@@ -133,12 +130,12 @@ body{
 .apresentacao__conteudo__subtitulo{
     font-family: var(--fonte-primaria);
     color: var(--cor-secudaria);
-    font-size: 0.7rem;
+    font: size 1.3em;
     text-align: center;
-    width: 60%;
+    width: 100%;
+    padding: 30px 0;
 }
 .apresentacao__conteudo__texto__link {
-
     color: var(--cor-secudaria);
    
 }
@@ -152,17 +149,16 @@ body{
     border:1px solid white;
 }
 .contatos__links__botoes {
-    border: 1px solid var(--cor-terciaria);
-    color: var(--cor-primaria);
+    border: 2px solid var(--cor-terciaria);
+    color: var(--cor-secudaria);
     border-radius: 0 10px 0 10px;
     padding: 8px 0;
     text-align: center;
     text-decoration: none;
-    width: 100%;
-    background-color: var(--cor-terciaria);
+    width: 70%;
     font-family: var(--fonte-primaria);
     font-weight: 400;
-    font-size: 60%;
+    font-size: 1rem;
     
 }
 .contatos__links__botoes:hover {
@@ -188,6 +184,8 @@ footer {
     .cabecalho {
         position: relative;
         width: 100%;
+        display: inline-block;
+        width: 80%;
     }
     .cabecalho__menu {
         flex-direction: column;
@@ -199,13 +197,16 @@ footer {
         display: flex;
         gap: 3px;
         font-family: var(--fonte-secundaria);
-        font-weight: 400;
+        font-weight: 700;
         border-radius: 0 20px 0 20px;
+        font-size: 1.1rem;
 
     }
-    .apresentacao__imagem {
-        border-radius: 0 20px 0 20px;
+    .cabecalho__menu__link:hover {
+        color: var(--cor-hover);
+        transform: scale(1.4);
     }
+  
     .apresentacao {
         flex-direction: column-reverse;
     } 
@@ -213,12 +214,29 @@ footer {
         width: auto;
         padding: 8% 0; 
     }
+    .apresentacao__imagem {
+        width: 90%;
+    }
     .apresentacao__abstract{
         background: var(--cor-hover);
         width: 60%;
         margin: 8% 20%;
     }
-    
+    .cabecalho__menu__link:hover {
+        color: var(--cor-primaria);
+        transform:none;
+    }
+    .apresentacao__links {
+        align-items: center;
+        margin: 0;
+        padding: 3px 0;
+    }
+    .apresentacao__links__subtitulo {
+        padding: 1em;
+    }
+    .contatos__links__botoes {
+        width: 100%;
+    }
     iframe {
         width: 100%;
     }
